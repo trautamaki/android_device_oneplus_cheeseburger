@@ -41,5 +41,5 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
-# Inherit from the rs vendor directory
--include vendor/rs/config/BoardConfigAOSP.mk
+# Inherit from the aosp vendor directory
+-include vendor/aosp/config/BoardConfigAOSP.mk
