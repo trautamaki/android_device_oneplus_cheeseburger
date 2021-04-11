@@ -49,5 +49,28 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.cheeseburger
 
+PRODUCT_PACKAGES += \
+    pd-mapper \
+    qrtr-ns \
+    qrtr-cfg \
+    qrtr-lookup \
+    rmtfs \
+    tqftpserv \
+    android.hardware.drm@1.0-impl \
+    android.hardware.drm@1.0-service \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.composer@2.2-impl \
+    android.hardware.graphics.composer@2.2-service \
+    android.hardware.graphics.mapper@2.0-impl-2.1 \
+    gralloc.gbm \
+    hwcomposer.drm \
+    libGLES_mesa
+
+
 # Inherit from oneplus msm8998-common
 $(call inherit-product, device/oneplus/msm8998-common/common.mk)
+include device/oneplus/cheeseburger/firmware.mk
+
+PRODUCT_SOONG_NAMESPACES += external/mesa3d
+
