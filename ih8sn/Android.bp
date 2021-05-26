@@ -1,0 +1,6 @@
+prebuilt_etc {
+    name: "ih8sn.conf.cheeseburger",
+    src: "ih8sn.conf.cheeseburger",
+    filename: "ih8sn.conf",
+    required: ["ih8sn"],
+}
